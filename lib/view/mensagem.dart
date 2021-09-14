@@ -9,7 +9,7 @@ mixin Mensagem {
         toastLength: duration ?? Toast.LENGTH_LONG,
         gravity: gravity ?? ToastGravity.BOTTOM,
         timeInSecForIosWeb: 1,
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.orangeAccent,
         textColor: Colors.black,
         fontSize: 16.0
     );

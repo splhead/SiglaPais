@@ -62,23 +62,19 @@ Widget _listaPaises(List? paises) {
           itemBuilder: (context, index) {
             return Container(
               child: Card(
-                child: ExpansionTile(
+                child: ListTile(
                   title: Text("${paises[index]["name"]}", style: TextStyle(
-                    color: Colors.blueAccent, fontWeight: FontWeight.bold,
+                    color: Colors.orangeAccent, fontWeight: FontWeight.bold,
                     fontSize: 20
                   ),),
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Container(
+                  subtitle:
+                    Container(
                         alignment: Alignment.centerLeft,
                         child: Text("${paises[index]["code"] ?? '--'}", style: TextStyle(
                             color: Colors.grey, fontWeight: FontWeight.bold,
                             fontSize: 16
                         )),
                       ),
-                    )
-                  ],
                 ),
               ),
             );

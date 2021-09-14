@@ -18,7 +18,7 @@ class Menu extends StatelessWidget with Mensagem {
             children: [
               Container(
                 alignment: Alignment.center,
-                color: Colors.blue,
+                color: Colors.orangeAccent,
                 height: 100,
                 child: Text(
                   "Menu",
@@ -45,9 +45,12 @@ class Menu extends StatelessWidget with Mensagem {
                                 ),
                               ),
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
                                   TextButton(
-                                      child: Text('Cancelar'),
+                                      child: Text('Cancelar',
+                                          style:
+                                            TextStyle(color: Colors.black)),
                                       onPressed: () {
                                         Navigator.pop(context);
                                         showMensagem("Pesquisa cancelada!");
@@ -56,7 +59,7 @@ class Menu extends StatelessWidget with Mensagem {
                                       child: Text(
                                         'Ok',
                                         style:
-                                            TextStyle(color: Colors.blueAccent),
+                                            TextStyle(color: Colors.orangeAccent),
                                       ),
                                       onPressed: () {
                                         Navigator.pop(context);
